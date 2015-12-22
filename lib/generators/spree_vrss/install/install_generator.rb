@@ -14,8 +14,8 @@ module SpreeVrss
        # backend_css_file = "vendor/assets/stylesheets/spree/backend/all.css"
 
         if File.exist?(backend_css_file) && File.exist?(frontend_css_file)
-          inject_into_file frontend_css_file, " *= require store/spree_payupaisa_express\n", :before => /\*\//, :verbose => true
-          inject_into_file backend_css_file, " *= require admin/spree_payupaisa_express\n", :before => /\*\//, :verbose => true
+          inject_into_file frontend_css_file, " *= require spree/frontend/spree_vrss\n", :before => /\*\//, :verbose => true
+          #inject_into_file backend_css_file, " *= require admin/spree_payupaisa_express\n", :before => /\*\//, :verbose => true
         end
       end
 
