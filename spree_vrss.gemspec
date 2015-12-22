@@ -7,7 +7,7 @@ $:.unshift lib unless $:.include?(lib)
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_vrss'
-  s.version     = SpreeVrss::VERSION
+  s.version     = '1.0'
   s.summary     = 'Spree Commerce'
   s.description = s.summary
   s.required_ruby_version = '>= 1.9.3'
