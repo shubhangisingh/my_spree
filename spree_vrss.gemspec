@@ -2,7 +2,7 @@
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
 
-require 'spree_vrss/version'
+#require 'spree_vrss/version'
 
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
